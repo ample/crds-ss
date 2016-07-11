@@ -1,0 +1,6 @@
+<ul *ngFor="let card of cards | async">
+  <li class="text" *ngIf="card.active">
+    <strong>{{ card.title }}</strong><br>
+    {{ card.body }}
+  </li>
+</ul>
