@@ -15,8 +15,8 @@ describe('App: SecondScreen', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'second-screen works!\'',
-      inject([SecondScreenAppComponent], (app: SecondScreenAppComponent) => {
-    expect(app.title).toEqual('second-screen works!');
-  }));
+  // it('should have as title \'second-screen works!\'',
+  //     inject([SecondScreenAppComponent], (app: SecondScreenAppComponent) => {
+  //   expect(app.title).toEqual('second-screen works!');
+  // }));
 });
