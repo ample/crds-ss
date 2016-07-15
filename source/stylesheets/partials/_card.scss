@@ -1,0 +1,10 @@
+.card {
+  background-color: $bg-color-card;
+  margin-bottom: $space-sm;
+  @include border-radius(8px);
+
+  article {
+    color: $white;
+    padding: $grid-gutter-width * 2 $grid-gutter-width;
+  }
+}

@@ -1,0 +1,96 @@
+a {
+  color: $link-color;
+  text-decoration: none;
+  @include animate(color, .75s, .05s);
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+}
+
+body {
+  background: $bg-color;
+  font-family:  $font-family-serif;
+  font-size: $font-size-base;
+  font-weight: $font-weight-reg;
+  line-height: $line-height-base;
+  color: $font-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-reg;
+}
+
+h1 {
+  color: $text-color;
+  font-family:  $font-family-serif;
+  font-size: $font-size-h1;
+  line-height: .85;
+  letter-spacing: -0.06em;
+  margin: .6em 0;
+
+  @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+    font-size: $font-size-h1 * .85;
+  }
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-size-h1 * .75;
+  }
+}
+
+h2 {
+  font-family:  $font-family-sans;
+  font-size: $font-size-h2;
+  letter-spacing: .03em;
+  line-height: $line-height-sm;
+  margin: .4em 0 0;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+    font-size: $font-size-h2 * .9;
+  }
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-size-h2 * .85;
+  }
+}
+
+header {
+  position: relative;
+  z-index: 99999;
+}
+
+hr {
+  border-color: $border-color;
+  color: $border-color;
+
+  &.spacer{
+    border-color: transparent;
+    color: transparent;
+
+    &.spacer-lg {
+      margin: $space-md 0;
+    }
+    &.spacer-md {
+      margin: $space-md 0;
+    }
+    &.spacer-xs {
+      margin: $space-xs 0;
+    }
+  }
+}
+
+main {
+  margin-top: $space-sm;
+}
+
+nav {
+  font-family:  $font-family-sans;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+}
