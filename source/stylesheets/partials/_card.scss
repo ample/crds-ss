@@ -3,8 +3,26 @@
   margin-bottom: $space-sm;
   @include border-radius(8px);
 
+  &.card-center {
+    h1, h2, h3, h4, h5, h6, p, .btn, .list-sharing {
+      text-align: center;
+    }
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.card-right {
+    h1, h2, h3, h4, h5, h6, img, p, .btn, .list-sharing {
+      text-align: right;
+    }
+    img {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
   article {
-    color: $white;
     padding: $grid-gutter-width * 2 $grid-gutter-width;
   }
 }

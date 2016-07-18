@@ -9,7 +9,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <%# stylesheet_link_tag "normalize", "all" %>
+    <script src="https://use.typekit.net/vms7osh.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <%= stylesheet_link_tag 'application' %>
     <%= javascript_include_tag  "all" %>
   </head>
