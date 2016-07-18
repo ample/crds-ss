@@ -1,0 +1,36 @@
+.card-promo01 {
+  article {
+    margin-top: -60px;
+    padding: $space-sm;
+    position: relative;
+    z-index: 1001;
+    @media (min-width: $screen-sm-min) {
+      margin-top: -100px;
+      padding: $space-md;
+    }
+    h1, h2, h3, h4, h5, h6, img, p, ul {
+      margin: 0 0 $space-sm 0;
+      @media (min-width: $screen-sm-min) {
+        margin: 0 0 $space-md 0;
+      }
+    }
+  }
+
+  header {
+    position: relative;
+    z-index: 1000;
+    img {
+      @include border-top-radius($border-radius-large);
+    }
+    .header-fade {
+      bottom: 0;
+      height: 100px;
+      position: absolute;
+      width: 100%;
+      @include gradient-vertical($start-color: rgba($bg-color-card,0.0), $end-color: rgba($bg-color-card,1.0), $start-percent: 0%, $end-percent: 80%);
+      @media (min-width: $screen-sm-min) {
+        height: 200px;
+      }
+    }
+  }
+}
