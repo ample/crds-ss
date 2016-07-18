@@ -30,7 +30,6 @@ h1 {
   font-size: $font-size-h1;
   line-height: .85;
   letter-spacing: -0.03em;
-  margin: .6em 0;
 
   @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
     font-size: $font-size-h1 * .85;
@@ -44,7 +43,6 @@ h2 {
   font-size: $font-size-h2;
   letter-spacing: .03em;
   line-height: $line-height-sm;
-  margin: .4em 0 0;
   text-transform: uppercase;
 
   @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
@@ -53,11 +51,6 @@ h2 {
   @media (max-width: $screen-xs-max) {
     font-size: $font-size-h2 * .85;
   }
-}
-
-header {
-  position: relative;
-  z-index: 99999;
 }
 
 hr {
@@ -81,7 +74,10 @@ hr {
 }
 
 main {
-  margin-top: $space-sm;
+  margin-top: $space-xs;
+  @media (min-width: $screen-sm-min) {
+    margin-top: $space-sm;
+  }
 }
 
 nav {
