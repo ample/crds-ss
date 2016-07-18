@@ -4,26 +4,6 @@
   -o-transition:      $property $duration $delay;
   transition:         $property $duration $delay;
 }
-// Full width background image
-@mixin bg-image-card($image-path) {
-
-  height: 400px;
-
-  @media (min-width: $screen-sm-min){
-    height: 300px;
-  }
-  @media (min-width: $screen-md-min){
-    height: 400px;
-  }
-  @media (min-width: $screen-lg-min){
-    height: 450px;
-  }
-
-  background: image-url('#{$image-path}') no-repeat center center;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale')";
-}
 
 // Retina bg images
 @mixin bg-image-retina($image-path, $type, $width, $height, $xpos, $ypos) {
@@ -58,192 +38,20 @@
   @include border-bottom-radius($radius);
 }
 
-// Create a grid of cards
-// Specify how many cards at each breakpoint
-@mixin card-grid($xs-per-row, $sm-per-row, $md-per-row, $lg-per-row) {
-
-  $xs-col: 12/$xs-per-row;
-  $sm-col: 12/$sm-per-row;
-  $md-col: 12/$md-per-row;
-  $lg-col: 12/$lg-per-row;
-
-  @media (max-width: $screen-xs-max) {
-    $nChild: $xs-per-row;
-
-    .card {
-      @include make-xs-column($xs-col);
-
-      &:nth-child(#{$nChild}n+1) {
-        clear: both;
-      }
-    }
-  }
-
-  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    $nChild: $sm-per-row;
-
-    .card {
-      @include make-sm-column($sm-col);
-
-      &:nth-child(#{$nChild}n+1) {
-        clear: both;
-      }
-    }
-  }
-
-  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    $nChild: $md-per-row;
-
-    .card {
-      @include make-md-column($md-col);
-
-      &:nth-child(#{$nChild}n+1) {
-        clear: both;
-      }
-    }
-  }
-
-  @media (min-width: $screen-lg) {
-    $nChild: $lg-per-row;
-
-    .card {
-      @include make-lg-column($lg-col);
-
-      &:nth-child(#{$nChild}n+1) {
-        clear: both;
-      }
-    }
-  }
+// Full width background image
+@mixin card-bg($image-path) {
+  background: image-url('#{$image-path}') no-repeat center top;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale')";
 }
 
-// // Full width background image
-// @mixin project-bg($image-path, $vert-pos, $horiz-pos) {
-//
-// }
-
-// Creates project cards, project detail
-@mixin project($name, $base-color, $header-color) {
-  $base-color-darker: darken($base-color, 22%);
-  $base-color-dark: darken($base-color, 15%);
-  $base-color-light: lighten($base-color, 10%);
-  $base-color-saturate: saturate($base-color-light, 20%);
-  $base-color-desaturate: desaturate($base-color, 15%);
-  $text-color: $black;
-
-
-  .index .card.#{$name},
-  .projects .card.#{$name} {
-    a {
-  		h2 {
-  			color: $header-color;
-  		}
-  		&:hover {
-  			h2 {
-          color: saturate($header-color, 50%);
-  			}
-  		}
-  	}
-
-		.project-img {
-      @include bg-image-card('project-#{$name}-1.jpg');
-		}
-  	.thumbnail {
-  		border-bottom: 2px solid $header-color;
-  	}
+@mixin header-size ($font-size) {
+  font-size: $font-size;
+  @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+    font-size: $font-size * .85;
   }
-
-  .project-detail.projects_#{$name} {
-    background-color: $base-color;
-
-    main {
-      #project-content {
-        background-color: rgba($base-color, 1);
-      }
-
-      .project-examples {
-
-        figcaption {
-          background: rgba($base-color-dark, 0.9);
-        }
-        figcaption h5 {
-          //background-color: $base-color-light;
-          //color: $text-color;
-          background-color: $base-color-darker;
-          color: $white;
-        }
-      }
-
-      #project-header {
-        @include gradient-vertical($header-color, darken($header-color, 3%), 0%, 80%);
-        h1 {
-          background-color: darken($header-color, 6%);
-          color: rgba($white, 0.6);
-        }
-        p {
-          color: $white;
-        }
-      }
-
-      .project-examples {
-    		p {
-    			color: $text-color;
-    		}
-    	}
-
-      .project-topics {
-        background: $base-color-dark;
-
-        h2 {
-          color: $base-color-saturate;
-        }
-        li, p {
-          color: rgba($text-color, 0.8);
-        }
-      }
-    }
-
-    .footer-global {
-      border-top-color: $header-color;
-    }
-
-    .navbar-default {
-      background-color: $header-color;
-
-      .navbar-collapse {
-        @media (max-width: $screen-xs-max) {
-          background-color: darken($header-color, 6%);
-        }
-      }
-
-      .navbar-header a.navbar-brand {
-        color: rgba($white, 0.4);
-
-        em {
-          color: rgba($white, 0.7);
-        }
-
-        &:hover,
-        &:hover em {
-          color: $white;
-        }
-      }
-
-      .navbar-nav li a {
-        color: $white;
-
-        &.active,
-        &:focus {
-          color: $header-color;
-        }
-        &:hover {
-          color: $white;
-        }
-      }
-
-      .navbar-toggle {
-        color: $white;
-        background-color: darken($header-color, 6%);
-      }
-    }
+  @media (max-width: $screen-xs-max) {
+    font-size: $font-size * .75;
   }
 }
