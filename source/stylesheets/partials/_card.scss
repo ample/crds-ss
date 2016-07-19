@@ -113,7 +113,7 @@
   }
   h1 {
     letter-spacing: 0em;
-    margin: .4em 0 .3em;
+    margin: -.1em 0 .4em;
     @include text-size ($font-size-h3);
     span {
       background-color: $white;
@@ -124,7 +124,7 @@
     margin-bottom: -1.25em;
     .img-circle {
       border: 8px solid $white;
-      margin-bottom: -16px;
+      margin-bottom: 0;
       position: relative;
     }
   }
