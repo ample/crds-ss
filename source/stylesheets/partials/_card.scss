@@ -44,7 +44,7 @@
   article {
     padding: $space-lg $space-sm;
     @media (min-width: $screen-sm-min) {
-      padding: $space-xl $space-md;
+      padding: $space-xl $space-lg;
     }
   }
   h1, h2, h3, h4, h5, h6, img, p, ul {
@@ -150,7 +150,7 @@
     width: 100%;
     @include text-size ($font-size-h2);
     @media (min-width: $screen-sm-min) {
-      padding: 0 $space-md $space-md;
+      padding: 0 $space-lg $space-md;
     }
   }
   h2 {
