@@ -3,28 +3,25 @@
 
   li {
     display: inline-block;
-    @media (max-width: $screen-xs-max) {
-      top-margin: 6px;
-    }
   }
 
   li a {
+    color: $link-color;
+    display: inline-block;
     margin: 3px 3px 9px 0;
     padding: 0;
-    display: inline-block;
-    color: $link-color;
 
     i {
       $base: 24px;
       $size: $base * 2;
-      margin: 0;
-      padding-top: ($base / 2) + 3px;
-      font-size: $base;
-      @include border-radius($size);
-      width:  $size;
-      height: $size;
       background: rgba($gray, 0.5);
       color: $white;
+      font-size: $base;
+      height: $size;
+      margin: 0;
+      padding-top: ($base / 2) + 3px;
+      width:  $size;
+      @include border-radius($size);
     }
     &:hover i {
       background: rgba($gray, 0.25);

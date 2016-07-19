@@ -29,22 +29,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @include header-size ($font-size-h1);
+  @include text-size ($font-size-h1);
 }
 h2 {
-  @include header-size ($font-size-h2);
+  @include text-size ($font-size-h2);
 }
 h3 {
-  @include header-size ($font-size-h3);
+  @include text-size ($font-size-h3);
 }
 h4 {
-  @include header-size ($font-size-h4);
+  @include text-size ($font-size-h4);
 }
 h5 {
-  @include header-size ($font-size-h5);
+  @include text-size ($font-size-h5);
 }
 h6 {
-  @include header-size ($font-size-h6);
+  @include text-size ($font-size-h6);
 }
 
 hr {

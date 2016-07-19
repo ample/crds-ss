@@ -2,7 +2,7 @@
   font-family:  $font-family-btn;
   font-weight: $font-weight-btn;
   margin-top: $space-xs;
-  @include button-size(1em, 2em, 1em, 1, $border-radius-small);
+  @include button-size(1em, 2em, 1em, 1, $border-radius-sm);
   @media (max-width: $screen-xs-max) {
     display: block;
     width: 100%;

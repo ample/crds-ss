@@ -46,7 +46,20 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale')";
 }
 
-@mixin header-size ($font-size) {
+//
+@mixin card-comment-colors($header-color, $text-color, $bg-color) {
+  background-color: $bg-color;
+  article {
+    background-color: mix(black, $bg-color, 8%);
+    color: $text-color;
+  }
+  header h1 {
+    color: $header-color;
+  }
+}
+
+// Adujust text sizes for breakpoints
+@mixin text-size ($font-size) {
   font-size: $font-size;
   @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
     font-size: $font-size * .85;

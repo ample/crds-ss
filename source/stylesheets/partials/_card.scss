@@ -1,7 +1,7 @@
 .card {
   background-color: $bg-color-card;
   margin-bottom: $space-xs;
-  @include border-radius($border-radius-large);
+  @include border-radius($border-radius-lg);
   @media (min-width: $screen-sm-min) {
     margin-bottom: $space-sm;
   }
@@ -37,37 +37,8 @@
       }
     }
   }
-}
-
-/****************** PROMO ******************/
-.card-promo {
-  article {
-    margin-top: -60px;
-    position: relative;
-    z-index: 1001;
-    @media (min-width: $screen-sm-min) {
-      margin-top: -100px;
-    }
-    h1 {
-      @include header-size ($font-size-h2);
-    }
-  }
-  header {
-    position: relative;
-    z-index: 1000;
-    img {
-      @include border-top-radius($border-radius-large);
-    }
-    .header-fade {
-      bottom: 0;
-      height: 100px;
-      position: absolute;
-      width: 100%;
-      @include gradient-vertical($start-color: rgba($bg-color-card,0.0), $end-color: rgba($bg-color-card,1.0), $start-percent: 0%, $end-percent: 80%);
-      @media (min-width: $screen-sm-min) {
-        height: 200px;
-      }
-    }
+  footer {
+    padding: 0 0 $space-xl;
   }
 }
 
@@ -99,6 +70,77 @@
   }
 }
 
+/****************** COMMENT ******************/
+.card-comment {
+  padding: $space-lg $space-sm 0;
+  @media (min-width: $screen-sm-min) {
+    padding: $space-xl $space-md 0;
+  }
+  article {
+    font-weight: $font-weight-light;
+    letter-spacing: -0.04em;
+    line-height: $line-height-md;
+    margin-bottom: $space-lg;
+    padding-bottom: $space-lg;
+    padding-top: $space-xl;
+    @include border-radius($border-radius-lg);
+    @include text-size ($font-size-h2);
+  }
+  header {
+    margin-bottom: -1.25em;
+    h1 {
+      letter-spacing: 0em;
+      @include text-size ($font-size-h3);
+      span {
+        background-color: $white;
+        padding: .1em .5em;
+      }
+    }
+    img.img-circle {
+      border: 8px solid $white;
+      margin-bottom: -16px;
+    }
+  }
+  &.card-comment-a {
+    @include card-comment-colors(#bf5c04, $white, #bf5c04);
+  }
+  &.card-comment-b {
+    @include card-comment-colors(#f0442d, #101010, #ffd82d);
+  }
+}
+
+/****************** PROMO ******************/
+.card-promo {
+  article {
+    margin-top: -60px;
+    position: relative;
+    z-index: 1001;
+    @media (min-width: $screen-sm-min) {
+      margin-top: -100px;
+    }
+    h1 {
+      @include text-size ($font-size-h2);
+    }
+  }
+  header {
+    position: relative;
+    z-index: 1000;
+    img {
+      @include border-top-radius($border-radius-lg);
+    }
+    .header-fade {
+      bottom: 0;
+      height: 100px;
+      position: absolute;
+      width: 100%;
+      @include gradient-vertical($start-color: rgba($bg-color-card,0.0), $end-color: rgba($bg-color-card,1.0), $start-percent: 0%, $end-percent: 80%);
+      @media (min-width: $screen-sm-min) {
+        height: 200px;
+      }
+    }
+  }
+}
+
 /****************** VIDEO ******************/
 .card-series-video {
   article {
@@ -107,7 +149,7 @@
       padding-top: $space-xl;
     }
     h1 {
-      @include header-size ($font-size-h2);
+      @include text-size ($font-size-h2);
       color: rgba(#00020e, 0.9);
     }
   }

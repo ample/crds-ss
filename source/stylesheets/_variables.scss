@@ -34,6 +34,7 @@ $font-size-md:       		 	1.1em;
 $font-size-sm:         		1em;
 $font-size-xs:         		.8em;
 
+$font-weight-light:       200; // $font-family-text
 $font-weight-reg:         400; // $font-family-text
 $font-weight-btn:         500; // $font-family-btn
 $font-weight-semi:        600; // $font-family-headline
@@ -48,14 +49,14 @@ $font-size-h6:            ceil(($font-size-base * 0.85));
 
 $line-height-base:        1.6;
 $line-height-lg:          1.8;
-$line-height-md:          1.1;
+$line-height-md:          1.2;
 $line-height-sm:          1;
 
 //Borders
 $border-color:            #e7e8ef;
 $border-color-dark:       darken($border-color, 10%);
-$border-radius-small:     4px;
-$border-radius-large:     8px;
+$border-radius-sm:     4px;
+$border-radius-lg:     8px;
 
 // Spacing
 $base:    24px;
