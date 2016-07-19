@@ -15,6 +15,7 @@ $white:                   #fff;
 
 // Colors
 $blue:										#3a6e8f;
+$blue-dark:								#143d63;
 $bg-color:                #262626;
 $bg-color-card:           #171717;
 
@@ -47,8 +48,8 @@ $font-size-h4:            ceil(($font-size-base * 1.4));
 $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85));
 
-$line-height-base:        1.6;
-$line-height-lg:          1.8;
+$line-height-base:        1.4;
+$line-height-lg:          1.6;
 $line-height-md:          1.2;
 $line-height-sm:          1;
 
@@ -58,9 +59,9 @@ $border-radius-sm:        4px;
 $border-radius-lg:        8px;
 
 // Spacing
-$base:    24px;
-$space-xl:  $base * 3;
-$space-lg:  $base * 1.5;
-$space-md:  $base;
-$space-sm:  $base*.8;
-$space-xs:  $base*.3;
+$base:                    24px;
+$space-xl:                $base * 3;
+$space-lg:                $base * 1.5;
+$space-md:                $base;
+$space-sm:                $base * .8;
+$space-xs:                $base * .4;

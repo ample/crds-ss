@@ -5,7 +5,7 @@
   @media (min-width: $screen-sm-min) {
     margin-bottom: $space-sm;
   }
-  &.card-center {
+  &.card-align-center {
     h1, h2, h3, h4, h5, h6, p, ul {
       text-align: center;
     }
@@ -13,8 +13,23 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .media-left {
+      display: inline;
+
+      img {
+        margin-bottom: 0;
+      }
+    }
   }
-  &.card-right {
+  &.card-align-left {
+    h1, h2, h3, h4, h5, h6, img, p, ul {
+      text-align: left;
+    }
+    .img-circle {
+      border-bottom-left-radius: 0;
+    }
+  }
+  &.card-align-right {
     h1, h2, h3, h4, h5, h6, img, p, ul {
       text-align: right;
     }
@@ -22,16 +37,15 @@
       margin-left: auto;
       margin-right: 0;
     }
+    .img-circle {
+      border-bottom-right-radius: 0;
+    }
   }
   article {
     padding: $space-lg $space-sm;
     @media (min-width: $screen-sm-min) {
       padding: $space-xl $space-md;
     }
-    // padding: $space-sm;
-    // @media (min-width: $screen-sm-min) {
-    //   padding: $space-md;
-    // }
   }
   h1, h2, h3, h4, h5, h6, img, p, ul {
     margin: 0 0 $space-sm 0;
@@ -58,7 +72,7 @@
     }
   }
 }
-
+//
 /****************** BANNER ******************/
 .card-banner {
   &.card-banner-a {
@@ -82,7 +96,7 @@
     }
   }
 }
-
+//
 /****************** COMMENT ******************/
 .card-comment {
   padding: $space-lg $space-sm;
@@ -121,7 +135,7 @@
     @include card-comment-colors(#f0442d, #101010, #ffd82d);
   }
 }
-
+//
 /****************** LIST ******************/
 .card-list {
   article {
@@ -170,7 +184,7 @@
     }
   }
 }
-
+//
 /****************** PROMO ******************/
 .card-promo {
   article {
@@ -187,7 +201,22 @@
     @include text-size ($font-size-h2);
   }
 }
-
+//
+/****************** SCRIPTURE ******************/
+.card-scripture {
+  background-color: $blue-dark;
+  article {
+    font-weight: $font-weight-light;
+    letter-spacing: -0.04em;
+    line-height: $line-height-base;
+    margin-bottom: $space-lg;
+    @include text-size ($font-size-h3);
+  }
+  h1 {
+    @include text-size ($font-size-h2);
+  }
+}
+//
 /****************** VIDEO ******************/
 .card-series-video {
   footer {
