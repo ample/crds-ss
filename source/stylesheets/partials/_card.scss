@@ -5,7 +5,6 @@
   @media (min-width: $screen-sm-min) {
     margin-bottom: $space-sm;
   }
-
   &.card-center {
     h1, h2, h3, h4, h5, h6, p, ul {
       text-align: center;
@@ -24,108 +23,27 @@
       margin-right: 0;
     }
   }
-
   article {
-    padding: $space-sm;
+    padding: $space-lg $space-sm;
     @media (min-width: $screen-sm-min) {
-      padding: $space-md;
+      padding: $space-xl $space-md;
     }
-    h1, h2, h3, h4, h5, h6, img, p, ul {
-      margin: 0 0 $space-sm 0;
-      @media (min-width: $screen-sm-min) {
-        margin: 0 0 $space-md 0;
-      }
-    }
+    // padding: $space-sm;
+    // @media (min-width: $screen-sm-min) {
+    //   padding: $space-md;
+    // }
   }
-  footer {
-    padding: 0 0 $space-xl;
-  }
-}
-
-/****************** BANNER ******************/
-.card-banner {
-  &.card-banner-a {
-    @include card-bg('banner-a-bg.jpg');
-
-    article {
-      padding-bottom: $space-md;
-      padding-top: $space-lg;
-      @media (min-width: $screen-sm-min) {
-        padding-bottom: $space-lg;
-        padding-top: $space-xl;
-      }
-    }
-  }
-  &.card-banner-b {
-    @include card-bg('banner-b-bg.jpg');
-
-    article {
-      padding-bottom: $space-xl;
-      padding-top: $space-xl;
-      @media (min-width: $screen-sm-min) {
-        padding-bottom: $space-xl * 2;
-        padding-top: $space-xl * 2;
-      }
-    }
-  }
-}
-
-/****************** COMMENT ******************/
-.card-comment {
-  padding: $space-lg $space-sm 0;
-  @media (min-width: $screen-sm-min) {
-    padding: $space-xl $space-md 0;
-  }
-  article {
-    font-weight: $font-weight-light;
-    letter-spacing: -0.04em;
-    line-height: $line-height-md;
-    margin-bottom: $space-lg;
-    padding-bottom: $space-lg;
-    padding-top: $space-xl;
-    @include border-radius($border-radius-lg);
-    @include text-size ($font-size-h2);
-  }
-  header {
-    margin-bottom: -1.25em;
-    h1 {
-      letter-spacing: 0em;
-      @include text-size ($font-size-h3);
-      span {
-        background-color: $white;
-        padding: .1em .5em;
-      }
-    }
-    img.img-circle {
-      border: 8px solid $white;
-      margin-bottom: -16px;
-    }
-  }
-  &.card-comment-a {
-    @include card-comment-colors(#bf5c04, $white, #bf5c04);
-  }
-  &.card-comment-b {
-    @include card-comment-colors(#f0442d, #101010, #ffd82d);
-  }
-}
-
-/****************** PROMO ******************/
-.card-promo {
-  article {
-    margin-top: -60px;
-    position: relative;
-    z-index: 1001;
+  h1, h2, h3, h4, h5, h6, img, p, ul {
+    margin: 0 0 $space-sm 0;
     @media (min-width: $screen-sm-min) {
-      margin-top: -100px;
-    }
-    h1 {
-      @include text-size ($font-size-h2);
+      margin: 0 0 $space-md 0;
     }
   }
-  header {
+  header.header-img {
     position: relative;
     z-index: 1000;
     img {
+      margin-bottom: 0;
       @include border-top-radius($border-radius-lg);
     }
     .header-fade {
@@ -141,17 +59,147 @@
   }
 }
 
+/****************** BANNER ******************/
+.card-banner {
+  &.card-banner-a {
+    @include card-bg('banner-a-bg.jpg');
+    article {
+      padding-bottom: $space-md;
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: $space-lg;
+      }
+    }
+  }
+  &.card-banner-b {
+    @include card-bg('banner-b-bg.jpg');
+    article {
+      padding-bottom: $space-xl;
+      padding-top: $space-xl;
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: $space-xl * 2;
+        padding-top: $space-xl * 2;
+      }
+    }
+  }
+}
+
+/****************** COMMENT ******************/
+.card-comment {
+  padding: $space-lg $space-sm;
+  @media (min-width: $screen-sm-min) {
+    padding: $space-xl $space-md;
+  }
+  article {
+    font-weight: $font-weight-light;
+    letter-spacing: -0.04em;
+    line-height: $line-height-md;
+    margin-bottom: $space-lg;
+    @include border-radius($border-radius-lg);
+    @include text-size ($font-size-h2);
+  }
+  h1 {
+    letter-spacing: 0em;
+    margin: .4em 0 .3em;
+    @include text-size ($font-size-h3);
+    span {
+      background-color: $white;
+      padding: .1em .5em;
+    }
+  }
+  header {
+    margin-bottom: -1.25em;
+    .img-circle {
+      border: 8px solid $white;
+      margin-bottom: -16px;
+      position: relative;
+    }
+  }
+  &.card-comment-a {
+    @include card-comment-colors(#bf5c04, $white, #bf5c04);
+  }
+  &.card-comment-b {
+    @include card-comment-colors(#f0442d, #101010, #ffd82d);
+  }
+}
+
+/****************** LIST ******************/
+.card-list {
+  article {
+    padding-bottom: $space-lg;
+    padding-top: $space-lg;
+  }
+  h1 {
+    bottom: 0;
+    border-bottom: 1px solid $border-color;
+    padding: 0 $space-sm $space-md;
+    position: absolute;
+    width: 100%;
+    @include text-size ($font-size-h2);
+    @media (min-width: $screen-sm-min) {
+      padding: 0 $space-md $space-md;
+    }
+  }
+  h2 {
+    font-family:  $font-family-text;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-md;
+    margin-bottom: .4em;
+    text-transform: none;
+    @include text-size ($font-size-h4);
+  }
+  header {
+    margin-bottom: $space-lg * -1;
+  }
+  .media {
+    border-bottom: 1px solid $border-color;
+    color: rgba($white, 0.8);
+    margin-bottom: $space-md;
+    padding-bottom: $space-xs;
+
+    &:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .media-left {
+    padding-right: $space-sm;
+    img {
+      max-width: 90px;
+    }
+  }
+}
+
+/****************** PROMO ******************/
+.card-promo {
+  article {
+    margin-top: -60px;
+    padding-bottom: $space-md;
+    padding-top: $space-md;
+    position: relative;
+    z-index: 1001;
+    @media (min-width: $screen-sm-min) {
+      margin-top: -100px;
+    }
+  }
+  h1 {
+    @include text-size ($font-size-h2);
+  }
+}
+
 /****************** VIDEO ******************/
 .card-series-video {
-  article {
-    padding-top: $space-lg;
+  footer {
+    margin-top: $space-md * -1;
+    padding-bottom: $space-lg;
     @media (min-width: $screen-sm-min) {
-      padding-top: $space-xl;
+      padding-bottom: $space-xl;
     }
-    h1 {
-      @include text-size ($font-size-h2);
-      color: rgba(#00020e, 0.9);
-    }
+  }
+  h1 {
+    @include text-size ($font-size-h2);
+    color: rgba(#00020e, 0.9);
   }
   &.card-series-video-a {
     @include card-bg('series-video-bg.jpg');

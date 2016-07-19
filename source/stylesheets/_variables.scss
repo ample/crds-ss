@@ -19,8 +19,8 @@ $bg-color:                #262626;
 $bg-color-card:           #171717;
 
 // Links
-$link-color:							$blue;
-$link-color-hover:				saturate($blue, 40%);
+$link-color:							#7acaf4;
+$link-color-hover:				lighten($link-color, 10%);
 
 // Typography
 $font-color:              $white;
@@ -43,7 +43,7 @@ $font-weight-bold:        700; // $font-family-text
 $font-size-h1:            floor(($font-size-base * 4.5));
 $font-size-h2:            floor(($font-size-base * 3.25));
 $font-size-h3:            ceil(($font-size-base * 2));
-$font-size-h4:            ceil(($font-size-base * 1.25));
+$font-size-h4:            ceil(($font-size-base * 1.4));
 $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85));
 
@@ -53,10 +53,9 @@ $line-height-md:          1.2;
 $line-height-sm:          1;
 
 //Borders
-$border-color:            #e7e8ef;
-$border-color-dark:       darken($border-color, 10%);
-$border-radius-sm:     4px;
-$border-radius-lg:     8px;
+$border-color:            rgba($white, 0.1);
+$border-radius-sm:        4px;
+$border-radius-lg:        8px;
 
 // Spacing
 $base:    24px;

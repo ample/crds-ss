@@ -5,33 +5,6 @@
   transition:         $property $duration $delay;
 }
 
-// Retina bg images
-@mixin bg-image-retina($image-path, $type, $width, $height, $xpos, $ypos) {
-  background-image: image-url($image-path + '.' + $type);
-  background-size:  $width $height;
-  background-position: $xpos $ypos;
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (-moz-min-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx){
-    & {
-      background-image: image-url($image-path + '@2x.' + $type);
-      -webkit-background-size:        $width $height;
-      -moz-background-size:           $width $height;
-      -o-background-size:             $width $height;
-      background-size:                $width $height;
-
-      -webkit-background-position:    $xpos $ypos;
-      -moz-background-position:       $xpos $ypos;
-      -o-background-position:         $xpos $ypos;
-      background-position:            $xpos $ypos;
-    }
-  }
-}
-
 // Border radius
 @mixin border-radius($radius) {
   @include border-top-radius($radius);
@@ -46,7 +19,7 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale')";
 }
 
-//
+// Custom color for comment cards
 @mixin card-comment-colors($header-color, $text-color, $bg-color) {
   background-color: $bg-color;
   article {
@@ -61,10 +34,8 @@
 // Adujust text sizes for breakpoints
 @mixin text-size ($font-size) {
   font-size: $font-size;
-  @media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
-    font-size: $font-size * .85;
-  }
+
   @media (max-width: $screen-xs-max) {
-    font-size: $font-size * .75;
+    font-size: $font-size * .8;
   }
 }
