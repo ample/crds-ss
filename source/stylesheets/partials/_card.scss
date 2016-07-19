@@ -102,9 +102,9 @@
 /****************** VIDEO ******************/
 .card-series-video {
   article {
-    padding-top: $space-md;
+    padding-top: $space-lg;
     @media (min-width: $screen-sm-min) {
-      padding-top: $space-lg;
+      padding-top: $space-xl;
     }
     h1 {
       @include header-size ($font-size-h2);
