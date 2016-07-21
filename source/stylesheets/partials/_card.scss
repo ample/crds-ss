@@ -47,6 +47,12 @@
       padding: $space-xl $space-lg;
     }
   }
+  footer {
+    padding: $space-sm $space-sm;
+    @media (min-width: $screen-sm-min) {
+      padding: $space-xs $space-lg;
+    }
+  }
   h1, h2, h3, h4, h5, h6, img, p, ul {
     margin: 0 0 $space-sm 0;
     @media (min-width: $screen-sm-min) {
@@ -83,6 +89,9 @@
         padding-bottom: $space-lg;
       }
     }
+    .btn {
+      @extend .btn-block;
+    }
   }
   &.card-banner-b {
     @include card-bg('banner-b-bg.jpg');
@@ -99,17 +108,11 @@
 //
 /****************** COMMENT ******************/
 .card-comment {
-  padding: $space-lg $space-sm;
-  @media (min-width: $screen-sm-min) {
-    padding: $space-xl $space-md;
-  }
   article {
-    font-weight: $font-weight-light;
-    letter-spacing: -0.04em;
-    line-height: $line-height-md;
-    margin-bottom: $space-lg;
-    @include border-radius($border-radius-lg);
-    @include text-size ($font-size-h2);
+    padding-top: 0;
+  }
+  aside {
+    padding-top: $space-lg;
   }
   h1 {
     letter-spacing: 0em;
@@ -121,11 +124,23 @@
     }
   }
   header {
+    padding-top: $space-xl;
     margin-bottom: -1.25em;
     .img-circle {
       border: 8px solid $white;
       margin-bottom: 0;
       position: relative;
+    }
+  }
+  section {
+    font-weight: $font-weight-light;
+    letter-spacing: -0.04em;
+    line-height: $line-height-md;
+    padding: $space-lg $space-sm;
+    @include border-radius($border-radius-lg);
+    @include text-size ($font-size-h2);
+    @media (min-width: $screen-sm-min) {
+      padding: $space-xl $space-lg;
     }
   }
   &.card-comment-a {
@@ -210,7 +225,6 @@
     font-weight: $font-weight-light;
     letter-spacing: -0.04em;
     line-height: $line-height-base;
-    margin-bottom: $space-lg;
     @include text-size ($font-size-h3);
   }
   h1 {
@@ -220,16 +234,16 @@
 //
 /****************** VIDEO ******************/
 .card-series-video {
-  footer {
-    margin-top: $space-md * -1;
-    padding-bottom: $space-lg;
-    @media (min-width: $screen-sm-min) {
-      padding-bottom: $space-xl;
-    }
+  article {
+    padding-bottom: 0;
+    padding-top: 0;
   }
   h1 {
     @include text-size ($font-size-h2);
     color: rgba(#00020e, 0.9);
+  }
+  header {
+    padding-top: $space-xl;
   }
   &.card-series-video-a {
     @include card-bg('series-video-bg.jpg');

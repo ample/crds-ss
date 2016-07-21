@@ -22,7 +22,7 @@
 // Custom color for comment cards
 @mixin card-comment-colors($header-color, $text-color, $bg-color) {
   background-color: $bg-color;
-  article {
+  section {
     background-color: mix(black, $bg-color, 8%);
     color: $text-color;
   }

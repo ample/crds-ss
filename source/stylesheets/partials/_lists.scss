@@ -14,7 +14,7 @@
     i {
       $base: 24px;
       $size: $base * 2;
-      background: rgba($gray, 0.5);
+      background: rgba($gray, 0.35);
       color: $white;
       font-size: $base;
       height: $size;
@@ -24,7 +24,7 @@
       @include border-radius($size);
     }
     &:hover i {
-      background: rgba($gray, 0.25);
+      background: rgba($gray, 0.5);
     }
   }
 }
