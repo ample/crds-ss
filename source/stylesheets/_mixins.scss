@@ -13,10 +13,10 @@
 
 // Full width background image
 @mixin card-bg($image-path) {
-  background: image-url('#{$image-path}') no-repeat center top;
+  background: image-url('#{$imgix_url}/#{$image-path}') no-repeat center top;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/#{$image-path}', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgix_url}/#{$image-path}', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgix_url}/#{$image-path}', sizingMethod='scale')";
 }
 
 // Custom color for comment cards

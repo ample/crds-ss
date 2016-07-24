@@ -13,7 +13,10 @@
     <script src="https://use.typekit.net/vms7osh.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <%= stylesheet_link_tag 'application' %>
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag  "imgix.min.js" %>
+    <script>
+      imgix.config.host = 'crds-cms-uploads.imgix.net';
+    </script>
   </head>
 
   <body class="<%= page_classes %>">

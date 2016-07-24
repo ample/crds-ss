@@ -3,13 +3,14 @@
     <div class="header-fade">
       <h1>Going Deeper</h1>
     </div>
-    <%= image_tag 'list-a-bg.jpg', class: 'img-responsive' %>
+    <%= imgix_tag 'list-a-bg.jpg', class: 'img-responsive' %>
+
   </header>
   <article>
     <div class="media">
       <div class="media-left">
         <a href="#">
-          <%= image_tag 'list-a-img1.jpg', class: 'media-object' %>
+          <%= imgix_tag 'list-a-img1c.jpg?w=90&fit=clip', width: 90, height: 138, class: 'media-object' %>
         </a>
       </div>
       <div class="media-body">
@@ -20,7 +21,7 @@
     <div class="media">
       <div class="media-left">
         <a href="#">
-          <%= image_tag 'list-a-img2.jpg', class: 'media-object' %>
+          <%= imgix_tag 'list-a-img2.jpg?w=90&fit=clip', width: 90, height: 138, class: 'media-object' %>
         </a>
       </div>
       <div class="media-body">
@@ -31,7 +32,7 @@
     <div class="media">
       <div class="media-left">
         <a href="#">
-          <%= image_tag 'list-a-img3.jpg', class: 'media-object' %>
+          <%= imgix_tag 'list-a-img3.jpg?w=90&fit=clip', width: 90, height: 100, class: 'media-object' %>
         </a>
       </div>
       <div class="media-body">
