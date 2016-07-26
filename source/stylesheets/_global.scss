@@ -83,3 +83,12 @@ nav {
     text-decoration: none;
   }
 }
+
+p {
+  &.card-type {
+    color: $black-lighter;
+    font-weight: $font-weight-bold;
+    margin-top: $space-xl;
+    text-transform: uppercase;
+  }
+}
