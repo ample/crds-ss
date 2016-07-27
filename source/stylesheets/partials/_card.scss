@@ -82,7 +82,7 @@
 /****************** BANNER ******************/
 .card-banner {
   &.card-banner-a {
-    @include card-bg('banner-a-bg.jpg');
+    @include card-bg('_card-templates/banner-a-bg.jpg');
     article {
       padding-bottom: $space-md;
       @media (min-width: $screen-sm-min) {
@@ -94,7 +94,7 @@
     }
   }
   &.card-banner-b {
-    @include card-bg('banner-b-bg.jpg');
+    @include card-bg('_card-templates/banner-b-bg.jpg');
     article {
       padding-bottom: $space-xl;
       padding-top: $space-xl;
@@ -250,6 +250,6 @@
     padding-top: $space-xl;
   }
   &.card-series-video-a {
-    @include card-bg('series-video-bg.jpg');
+    @include card-bg('_card-templates/series-video-bg.jpg');
   }
 }
