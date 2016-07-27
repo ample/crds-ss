@@ -1,0 +1,32 @@
+//
+/****************** BANNER ******************/
+.card-banner {
+  &.card-banner-a {
+    @include card-bg('_card-templates/banner-a-bg.jpg');
+  }
+  &.card-banner-b {
+    @include card-bg('_card-templates/banner-b-bg.jpg');
+  }
+}
+
+//
+/****************** COMMENT ******************/
+.card-comment {
+  &.card-comment-a {
+    @include card-comment-colors(#bf5c04, $white, #bf5c04);
+  }
+  &.card-comment-b {
+    @include card-comment-colors(#f0442d, #101010, #ffd82d);
+  }
+}
+
+//
+/****************** VIDEO ******************/
+.card-series-video {
+  &.card-series-video-a {
+    @include card-bg('_card-templates/series-video-bg.jpg');
+    h1 {
+      color: rgba(#00020e, 0.9);
+    }
+  }
+}

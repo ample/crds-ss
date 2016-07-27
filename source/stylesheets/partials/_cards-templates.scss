@@ -82,7 +82,6 @@
 /****************** BANNER ******************/
 .card-banner {
   &.card-banner-a {
-    @include card-bg('_card-templates/banner-a-bg.jpg');
     article {
       padding-bottom: $space-md;
       @media (min-width: $screen-sm-min) {
@@ -94,7 +93,6 @@
     }
   }
   &.card-banner-b {
-    @include card-bg('_card-templates/banner-b-bg.jpg');
     article {
       padding-bottom: $space-xl;
       padding-top: $space-xl;
@@ -142,12 +140,6 @@
     @media (min-width: $screen-sm-min) {
       padding: $space-xl $space-lg;
     }
-  }
-  &.card-comment-a {
-    @include card-comment-colors(#bf5c04, $white, #bf5c04);
-  }
-  &.card-comment-b {
-    @include card-comment-colors(#f0442d, #101010, #ffd82d);
   }
 }
 //
@@ -244,12 +236,8 @@
   }
   h1 {
     @include text-size ($font-size-h2);
-    color: rgba(#00020e, 0.9);
   }
   header {
     padding-top: $space-xl;
-  }
-  &.card-series-video-a {
-    @include card-bg('_card-templates/series-video-bg.jpg');
   }
 }
