@@ -84,8 +84,11 @@ nav {
   }
 }
 
-
-.card-list .media-left a {
-  display: block;
-  width: 100%;
+p {
+  &.card-type {
+    color: $black-lighter;
+    font-weight: $font-weight-bold;
+    margin-top: $space-xl;
+    text-transform: uppercase;
+  }
 }
