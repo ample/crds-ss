@@ -7,14 +7,14 @@
   &.card-banner-anywhere-facebook {
     @include card-bg('banner-anywhere-facebook-bg.jpg', #04060a);
   }
+  &.card-banner-anywhere-host {
+    @include card-bg('banner-anywhere-host-bg.jpg', #0f2d49);
+  }
   &.card-banner-anywhere-welcome {
     @include card-bg('banner-anywhere-welcome-bg.jpg');
   }
   &.card-banner-b {
     @include card-bg('_card-templates/banner-b-bg.jpg');
-  }
-  &.card-banner-host {
-    @include card-bg('banner-host-bg.jpg', #0f2d49);
   }
   &.card-banner-kids-club {
     background-color: $green;
