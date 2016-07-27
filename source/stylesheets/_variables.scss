@@ -16,14 +16,23 @@ $black-dark:							darken($black-light, 5%);
 $black-darker:						darken($black-light, 12%);
 $white:                   #fff;
 
-// Colors
+// Brand Colors
 $blue:										#3a6e8f;
 $blue-dark:								#143d63;
+$cyan:										#7acaf4;
+$cyan-dark:								#0093df;
+$green:										#59afa8;
+$green-dark:							#1a3734;
+$orange:									#e3b161;
+$orange-dark:							#bf5c04;
+$yellow:									#fedc8c;
+$yellow-dark:							#e09e04;
+
 $bg-color:                #262626;
 $bg-color-card:           #171717;
 
 // Links
-$link-color:							#7acaf4;
+$link-color:							$cyan;
 $link-color-hover:				lighten($link-color, 10%);
 
 // Typography

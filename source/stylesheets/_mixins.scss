@@ -12,8 +12,8 @@
 }
 
 // Full width background image
-@mixin card-bg($image-path) {
-  background: image-url('#{$imgix_url}/#{$image-path}') no-repeat center top;
+@mixin card-bg($image-path, $bg-color: null) {
+  background: image-url('#{$imgix_url}/#{$image-path}') no-repeat center top $bg-color;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgix_url}/#{$image-path}', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgix_url}/#{$image-path}', sizingMethod='scale')";

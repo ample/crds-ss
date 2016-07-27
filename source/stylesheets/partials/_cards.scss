@@ -7,6 +7,18 @@
   &.card-banner-b {
     @include card-bg('_card-templates/banner-b-bg.jpg');
   }
+  &.card-banner-facebook {
+    @include card-bg('pilot-weekend1-banner-facebook-bg.jpg', #3b5998);
+  }
+  &.card-banner-host {
+    @include card-bg('pilot-weekend1-banner-host-bg.jpg', #0f2d49);
+  }
+  &.card-banner-kids-club {
+    background-color: $green;
+  }
+  &.card-banner-text-us {
+    background-color: rgba($yellow-dark, 0.1);
+  }
 }
 
 //
