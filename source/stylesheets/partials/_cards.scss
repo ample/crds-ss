@@ -26,12 +26,16 @@
 
 //
 /****************** COMMENT ******************/
+// card-comment-colors($header-color, $text-color, $bg-color);
 .card-comment {
   &.card-comment-a {
     @include card-comment-colors(#bf5c04, $white, #bf5c04);
   }
   &.card-comment-b {
     @include card-comment-colors(#f0442d, #101010, #ffd82d);
+  }
+  &.card-comment-spark-schigel {
+    @include card-comment-colors(#37285d, #101010, #f15c44);    
   }
 }
 
