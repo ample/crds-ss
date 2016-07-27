@@ -34,8 +34,8 @@
   &.card-comment-b {
     @include card-comment-colors(#f0442d, #101010, #ffd82d);
   }
-  &.card-comment-spark-schigel {
-    @include card-comment-colors(#37285d, #101010, #f15c44);    
+  &.card-comment-spark {
+    @include card-comment-colors(#37285d, $white, #f15c44);
   }
 }
 
