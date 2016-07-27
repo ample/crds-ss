@@ -46,7 +46,7 @@
       font-size: 70%;
       letter-spacing: -0.02em;
       line-height: 1.3;
-    }   
+    }
   }
   article {
     padding: $space-lg $space-sm;
@@ -199,12 +199,14 @@
 .card-promo {
   article {
     margin-top: -60px;
+    min-height: 70px;
     padding-bottom: $space-md;
     padding-top: $space-md;
     position: relative;
     z-index: 1001;
     @media (min-width: $screen-sm-min) {
       margin-top: -100px;
+      min-height: 110px;
     }
   }
   h1 {
