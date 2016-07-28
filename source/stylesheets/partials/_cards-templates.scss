@@ -120,8 +120,9 @@
     padding-top: $space-xl;
     margin-bottom: -1.25em;
     .img-circle {
-      border: 8px solid $white;
-      margin-bottom: 0;
+      //border: 8px solid $white;
+      border: none;
+      margin-bottom: 8px;
       position: relative;
     }
   }

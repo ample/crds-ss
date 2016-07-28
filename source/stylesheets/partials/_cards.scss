@@ -16,8 +16,17 @@
   &.card-banner-b {
     @include card-bg('_card-templates/banner-b-bg.jpg');
   }
+  &.card-banner-giving {
+    @include card-bg('banner-giving-bg.jpg');
+  }
   &.card-banner-kids-club {
     background-color: $green;
+  }
+  &.card-banner-prayer {
+    @include card-bg('banner-prayer-request-bg.jpg');
+  }
+  &.card-banner-survey {
+    @include card-bg('banner-survey-bg.jpg');
   }
   &.card-banner-text-us {
     background-color: rgba($yellow-dark, 0.1);
