@@ -9,6 +9,9 @@
     h1, h2, h3, h4, h5, h6, p, ul {
       text-align: center;
     }
+    iframe {
+      @extend .center-block;
+    }
     img {
       margin-left: auto;
       margin-right: auto;
@@ -60,7 +63,7 @@
       padding: $space-xs $space-lg;
     }
   }
-  h1, h2, h3, h4, h5, h6, img, p, ul {
+  h1, h2, h3, h4, h5, h6, iframe, img, p, ul {
     margin: 0 0 $space-sm 0;
     @media (min-width: $screen-sm-min) {
       margin: 0 0 $space-md 0;
@@ -84,6 +87,9 @@
       }
     }
   }
+  > img {
+    @include border-radius($border-radius-lg);
+  }
 }
 //
 /****************** BANNER ******************/
@@ -92,6 +98,10 @@
     padding-bottom: $space-md;
     @media (min-width: $screen-sm-min) {
       padding-bottom: $space-lg;
+    }
+    p, ul {
+      font-size: $font-size-lg;
+      line-height: $line-height-md;
     }
   }
   .btn {
@@ -120,7 +130,6 @@
     padding-top: $space-xl;
     margin-bottom: -1.25em;
     .img-circle {
-      //border: 8px solid $white;
       border: none;
       margin-bottom: 8px;
       position: relative;
@@ -129,12 +138,15 @@
   section {
     font-weight: $font-weight-light;
     letter-spacing: -0.04em;
-    line-height: $line-height-md;
+    line-height: $line-height-base;
     padding: $space-lg $space-sm;
     @include border-radius($border-radius-lg);
-    @include text-size ($font-size-h2);
+    @include text-size ($font-size-h3);
     @media (min-width: $screen-sm-min) {
       padding: $space-xl $space-lg;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
     }
   }
 }
@@ -213,6 +225,9 @@
   h1 {
     @include text-size ($font-size-h2);
   }
+}
+.card-promo-basic {
+
 }
 //
 /****************** SCRIPTURE ******************/
