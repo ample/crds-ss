@@ -145,6 +145,9 @@
     @media (min-width: $screen-sm-min) {
       padding: $space-xl $space-lg;
     }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 //
