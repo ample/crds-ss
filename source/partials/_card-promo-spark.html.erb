@@ -7,6 +7,10 @@
     <p><%= link_to 'Learn More', 'http://www.crossroads.net/spark', class: 'btn btn-primary' %></p>
   </article>
   <footer>
-    <%= partial 'partials/list-sharing', locals:{ facebook:'#', twitter: '#', email: 'mailto:'} %>
+    <%= partial 'partials/list-sharing', locals:{
+      facebook:'https://www.facebook.com/sharer/sharer.php?u=http%3A//www.crossroads.net/spark',
+      twitter: 'https://twitter.com/home?status=Ignite%20your%20life%20with%20a%20Spark.%20The%20current%20series%20happening%20now%20at%20Crossroads.%20http%3A//www.crossroads.net/spark',
+      email: 'mailto:?subject=This%20spark%20could%20change%20your%20life&amp;body=Check%20out%20the%20current%20series%20happening%20now%20at%20Crossroads.%20Each%20week%2C%20new%20speakers%20and%20experts%20%E2%80%94%20all%20with%20ideas%20and%20that%20can%20change%20us.%20%0A%0Ahttp%3A%2F%2Fwww.crossroads.net%2Fspark%20'
+      } %>
   </footer>
 </div>
