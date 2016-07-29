@@ -87,6 +87,9 @@
       }
     }
   }
+  > img {
+    @include border-radius($border-radius-lg);
+  }
 }
 //
 /****************** BANNER ******************/
@@ -135,7 +138,7 @@
   section {
     font-weight: $font-weight-light;
     letter-spacing: -0.04em;
-    line-height: $line-height-base;    
+    line-height: $line-height-base;
     padding: $space-lg $space-sm;
     @include border-radius($border-radius-lg);
     @include text-size ($font-size-h3);
@@ -219,6 +222,9 @@
   h1 {
     @include text-size ($font-size-h2);
   }
+}
+.card-promo-basic {
+
 }
 //
 /****************** SCRIPTURE ******************/
