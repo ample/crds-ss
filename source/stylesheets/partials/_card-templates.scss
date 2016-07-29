@@ -9,6 +9,9 @@
     h1, h2, h3, h4, h5, h6, p, ul {
       text-align: center;
     }
+    iframe {
+      @extend .center-block;
+    }
     img {
       margin-left: auto;
       margin-right: auto;
@@ -60,7 +63,7 @@
       padding: $space-xs $space-lg;
     }
   }
-  h1, h2, h3, h4, h5, h6, img, p, ul {
+  h1, h2, h3, h4, h5, h6, iframe, img, p, ul {
     margin: 0 0 $space-sm 0;
     @media (min-width: $screen-sm-min) {
       margin: 0 0 $space-md 0;
@@ -92,6 +95,10 @@
     padding-bottom: $space-md;
     @media (min-width: $screen-sm-min) {
       padding-bottom: $space-lg;
+    }
+    p, ul {
+      font-size: $font-size-lg;
+      line-height: $line-height-md;
     }
   }
   .btn {

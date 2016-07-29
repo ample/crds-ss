@@ -1,6 +1,7 @@
 //
 /****************** BANNER ******************/
 .card-banner {
+// @include card-bg('file-name.jpg', $bg-color);
   &.card-banner-a {
     @include card-bg('_card-templates/banner-a-bg.jpg');
   }
@@ -29,13 +30,13 @@
     @include card-bg('banner-survey-bg.jpg');
   }
   &.card-banner-text-us {
-    background-color: rgba($yellow-dark, 0.1);
+    @include card-bg('banner-text-us-bg-1.jpg');
   }
 }
 
 //
 /****************** COMMENT ******************/
-// card-comment-colors($header-color, $text-color, $bg-color);
+// @include card-comment-colors($header-color, $text-color, $bg-color);
 .card-comment {
   &.card-comment-a {
     @include card-comment-colors(#bf5c04, $white, #bf5c04);
@@ -50,6 +51,7 @@
 
 //
 /****************** VIDEO ******************/
+// @include card-bg('file-name.jpg', $bg-color);
 .card-series-video {
   &.card-series-video-a {
     @include card-bg('_card-templates/series-video-bg.jpg');
