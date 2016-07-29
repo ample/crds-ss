@@ -127,7 +127,6 @@
     padding-top: $space-xl;
     margin-bottom: -1.25em;
     .img-circle {
-      //border: 8px solid $white;
       border: none;
       margin-bottom: 8px;
       position: relative;
@@ -136,10 +135,10 @@
   section {
     font-weight: $font-weight-light;
     letter-spacing: -0.04em;
-    line-height: $line-height-md;
+    line-height: $line-height-base;    
     padding: $space-lg $space-sm;
     @include border-radius($border-radius-lg);
-    @include text-size ($font-size-h2);
+    @include text-size ($font-size-h3);
     @media (min-width: $screen-sm-min) {
       padding: $space-xl $space-lg;
     }
