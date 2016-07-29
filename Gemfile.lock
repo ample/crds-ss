@@ -39,8 +39,6 @@ GEM
     eventmachine (1.2.0.1)
     execjs (2.7.0)
     ffi (1.9.14)
-    font-awesome-sass (4.6.2)
-      sass (>= 3.2)
     git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
@@ -146,7 +144,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   ffi (~> 1.9.6)
-  font-awesome-sass
   jquery-middleman
   middleman (~> 3.3.12)
   middleman-livereload (~> 3.1.0)
