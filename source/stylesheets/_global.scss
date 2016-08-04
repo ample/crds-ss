@@ -85,6 +85,19 @@ nav {
 }
 
 p {
+  &.card-fpo {
+    border: 1px solid rgba($white, 0.1);
+    color: $black-lighter;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-xs;
+    padding: $space-xl 0;
+    text-align: center;
+    //text-transform: uppercase;    
+    @include border-radius($border-radius-lg);
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: $space-sm;
+    }
+  }
   &.card-type {
     color: $black-lighter;
     font-weight: $font-weight-bold;

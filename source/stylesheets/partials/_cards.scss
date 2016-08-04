@@ -26,6 +26,9 @@
   &.card-banner-prayer {
     @include card-bg('banner-prayer-request-bg.jpg');
   }
+  &.card-banner-prayer-fasting {
+    @include card-bg('banner-texture-bg-1.jpg', #0f2d49);
+  }
   &.card-banner-survey {
     @include card-bg('banner-survey-bg.jpg');
   }
