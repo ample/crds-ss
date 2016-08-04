@@ -47,6 +47,9 @@
   &.card-comment-b {
     @include card-comment-colors(#f0442d, #101010, #ffd82d);
   }
+  &.card-comment-did-you-know {
+    @include card-comment-colors($green, $white, $green);
+  }
   &.card-comment-spark {
     @include card-comment-colors(#37285d, $white, #f15c44);
   }
