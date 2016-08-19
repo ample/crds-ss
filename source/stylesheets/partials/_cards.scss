@@ -53,6 +53,9 @@
   &.card-comment-spark {
     @include card-comment-colors(#37285d, $white, #f15c44);
   }
+  &.card-comment-together {
+    @include card-comment-colors(#e2512c, $black, #f3eada);
+  }
 }
 
 //
