@@ -8,6 +8,9 @@
   &.card-banner-anywhere-facebook {
     @include card-bg('banner-anywhere-facebook-bg.jpg', #04060a);
   }
+  &.card-banner-anywhere-gather {
+    @include card-bg('banner-anywhere-gather-bg-1.jpg');
+  }
   &.card-banner-anywhere-host {
     @include card-bg('banner-anywhere-host-bg.jpg', #0f2d49);
   }
@@ -34,6 +37,9 @@
   }
   &.card-banner-text-us {
     @include card-bg('banner-text-us-bg-1.jpg');
+  }
+  &.card-banner-thanksgiving {
+    @include card-bg('banner-thanksgiving-1.jpg');
   }
 }
 
