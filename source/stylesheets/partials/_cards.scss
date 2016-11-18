@@ -56,6 +56,9 @@
   &.card-comment-did-you-know {
     @include card-comment-colors($green, $white, $green);
   }
+  &.card-comment-finding-peace {
+    @include card-comment-colors(#8f4641, $white, #8f4641);
+  }
   &.card-comment-spark {
     @include card-comment-colors(#37285d, $white, #f15c44);
   }

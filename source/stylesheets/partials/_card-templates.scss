@@ -117,6 +117,10 @@
   aside {
     padding-top: $space-lg;
   }
+  cite {
+    font-size: 85%;
+    line-height: $line-height-sm;
+  }
   h1 {
     letter-spacing: 0em;
     margin: -.1em 0 .4em;
@@ -238,6 +242,17 @@
     letter-spacing: -0.04em;
     line-height: $line-height-base;
     @include text-size ($font-size-h3);
+  }
+  div.reflect {
+    border-left: 7px solid $blue;
+    color: lighten($blue, 20%);
+    font-style: italic;
+    font-weight: $font-weight-reg;
+    letter-spacing: -0.02em;
+    line-height: $line-height-md;
+    margin-top: $space-xl;
+    padding: .2em 0 .4em 1em;
+    @include text-size ($font-size-lg);
   }
   h1 {
     @include text-size ($font-size-h2);

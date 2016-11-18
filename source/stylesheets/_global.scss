@@ -56,7 +56,7 @@ hr {
     color: transparent;
 
     &.spacer-lg {
-      margin: $space-md 0;
+      margin: $space-lg 0;
     }
     &.spacer-md {
       margin: $space-md 0;
@@ -92,7 +92,7 @@ p {
     margin-bottom: $space-xs;
     padding: $space-xl 0;
     text-align: center;
-    //text-transform: uppercase;    
+    //text-transform: uppercase;
     @include border-radius($border-radius-lg);
     @media (min-width: $screen-sm-min) {
       margin-bottom: $space-sm;
